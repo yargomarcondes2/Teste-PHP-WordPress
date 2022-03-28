@@ -1,0 +1,127 @@
+body {
+  background-image: url("../img/bg.png");
+  font-family: "Inter", sans-serif !important;
+}
+
+.fill {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  margin-top: 86px;
+  margin-bottom: 86px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.texto-cabecalho {
+  padding-top: 16px;
+  padding-bottom: 86px;
+}
+
+.rounded-left {
+  border: 2px solid transparent;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.rounded-right {
+  border: 2px solid transparent;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.input-estilo {
+  border: solid 3px #2f3236;
+  background-color: #181b20;
+  border-radius: 15px;
+  color: white;
+}
+
+.input-estilo {
+  padding-left: 1.3em;
+  text-align: left;
+}
+
+.botao {
+  background: #FF4F4F;
+  border-radius: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+  border: solid 3px transparent;
+}
+
+/*  radio button  */
+.custom-radio-btn {
+  --size: 25px;
+  min-width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 15px;
+  position: relative;
+  padding-left: var(--size);
+}
+
+.custom-radio-btn input {
+  display: none;
+}
+
+.custom-radio-btn.left {
+  padding-left: 0;
+  padding-right: var(--size);
+}
+
+.custom-radio-btn .label {
+  margin-left: 5px;
+}
+
+.custom-radio-btn.left .label {
+  margin: 0 5px;
+}
+
+.custom-radio-btn[aria-label]::after {
+  content: attr(aria-label);
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.custom-radio-btn .checkmark {
+  --gap: 5px;
+  --border: 2px;
+  --check-color: #2FCF5C;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  border: var(--border) solid var(--check-color);
+  padding: var(--gap);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.custom-radio-btn.left .checkmark {
+  left: auto;
+  right: 0;
+}
+
+.custom-radio-btn input:checked ~ .checkmark {
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at center, var(--check-color) calc((var(--size) - var(--border) * 2 - var(--gap) * 2) / 2), rgba(255, 255, 255, 0) 0);
+}
+
+/*  //radio button  */
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
